@@ -5,8 +5,13 @@ However you do know the names of the races, and also that each race puts it's na
 
 The races your friend is interested in are:
 BunRun
-
+Zombie
+Boston
+Spartan
+Mud
 
 There happen to have an index file of all the file names.  Your friend is willing totype these names in on the command line to your program.  
 
 They are asking you to find all file names that contain exactly one of the names of the races.
+
+Here is a small sampling of the list of races:
