@@ -22,7 +22,18 @@ Boston-Marathon_2019
 Bun_Run_In_The_Sun.pdf
 
 
-Bonus:
-1.  Get your program to give an option to print either the file names that contain exactly one of the race names, or any/multiple of the race names.
+Result for these file names:
+
+2014_Mud-run_for_fun.xml
+Boston-Marathon_2019
+
+## What to have in your answer:
+* A file that has your program in it that can be compiled
+* A seperate file with at least 5 test possible file names that you create
+* A seperate file with the answers to the test cases you created (list the file name on one line and then the answer on the following line.)
+
+
+## Bonus:
+1.  Get your program to give an option to print either the file names that contain exactly one of the race names, or any/multiple of the race names, based upon input from the user (to decide which they want to do.)
 2.  Your friend has found an additional batch of files that are in folders.  Look for the race names, ignoring any characters before the last '/' in the file name:
 races/summer/north/Zombie_run_for_your_life.docx
