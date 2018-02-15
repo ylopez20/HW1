@@ -28,8 +28,8 @@ Result for these file names:
 * Boston-Marathon_2019
 
 ## What to have in your answer:
-* A file that has your program in it that can be compiled
-* A seperate file with at least 5 test possible file names that you create
+* A file that has your program in it that can be compiled.   It should be named: <class name>.java
+* A seperate file with at least 5 test possible file names that you create.
 * A seperate file with the answers to the test cases you created (list the file name on one line and then the answer on the following line.)
 
 
