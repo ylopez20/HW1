@@ -4,11 +4,11 @@ You have a friend who has a lot of files where each one contains the results fro
 However you do know the names of the races, and also that each race puts it's name in the file name for it's results.
 
 The races your friend is interested in are:
-BunRun
-Zombie
-Boston
-Spartan
-Mud
+* BunRun
+* Zombie
+* Boston
+* Spartan
+* Mud
 
 There happen to have an index file of all the file names.  Your friend is willing totype these names in on the command line to your program.  
 
@@ -16,16 +16,16 @@ They are asking you to find all file names that contain exactly one of the names
 
 Here is a small sampling of the list of races:
 
-2014_Mud-run_for_fun.xml
-Spartan_run_in_the_Mud.doc
-Boston-Marathon_2019
-Bun_Run_In_The_Sun.pdf
+* 2014_Mud-run_for_fun.xml
+* Spartan_run_in_the_Mud.doc
+* Boston-Marathon_2019
+* Bun_Run_In_The_Sun.pdf
 
 
 Result for these file names:
 
-2014_Mud-run_for_fun.xml
-Boston-Marathon_2019
+* 2014_Mud-run_for_fun.xml
+* Boston-Marathon_2019
 
 ## What to have in your answer:
 * A file that has your program in it that can be compiled
