@@ -38,7 +38,7 @@ Sample Input 2:
 Sample Output 2:
 ~~~
 5 full groups can be formed, and no students will still need a group.
-
+~~~
 
 
 -----
