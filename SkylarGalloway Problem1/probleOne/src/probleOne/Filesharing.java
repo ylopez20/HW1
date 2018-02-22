@@ -14,8 +14,11 @@ public class Filesharing {
 		
 		Scanner numFiles = new Scanner(System.in); //input number of files
 	    System.out.println("Enter number of files: ");
-	    int num = numFiles.nextInt();    
-	    //int count=0;
+	    int num = numFiles.nextInt();
+		Scanner numfiles = new Scanner(System.in); //input number of files
+		System.out.println("How Many Keywords Matches: ");
+		int nUm = numfiles.nextInt();
+		//int count=0;
 		Scanner fiLe = new Scanner(System.in);  // input file names
 		//String[] userFile = new String[num]; Array for files
 		for (int i=0; i<num/*userFile.length*/; i++){	
@@ -45,7 +48,7 @@ public class Filesharing {
 			if (count==1){
 				System.out.println(file);
 			}
-			else if (count>1){
+			else if (count==nUm){
 				System.out.println(file);
 				//System.out.println(count); Used for troubleshooting
 			}
