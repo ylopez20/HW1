@@ -11,7 +11,7 @@ public class Problem2 {
         int count2 = 0;
         int count3 = 0;
         int i = 0;
-        while (!commandLine.charAt(i).equals("0")) {
+        while (commandLine.charAt(i) != "0") {
             System.out.print(commandLine.charAt(i)+"\n");
             if (commandLine.charAt(i) == 3) {
                 count3++;
