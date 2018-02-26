@@ -10,18 +10,27 @@ public class Problem2 {
         int count1 = 0;
         int count2 = 0;
         int count3 = 0;
-        int nu;
-        while(upperbound!=0)
-            if (commandLine.contains("3")) {
+        int i = 0;
+        while (!commandLine.charAt(i).equals("0")) {
+            System.out.print(commandLine.charAt(i)+"\n");
+            if (commandLine.charAt(i) == 3) {
                 count3++;
-            }
-            if (commandLine.contains("2")) {
+            } else if (commandLine.charAt(i) == 2) {
                 count2++;
-            }
-            if (commandLine.contains("1")) {
+            } else {
                 count1++;
             }
-            System.out.println("groups of 3 =");
-            System.out.print(count3);
+           i++;
+        }
+        if(count1<=count2){
+            count2-=count1;
+            count3+=count1;
+            System.out.println("groups of 3 = " +count3+", and " +2*count2+ " students will still need a group");
+
+        }else {
+            count1-=count2;
+            count3+=count1;
+            System.out.println("groups of 3 = " +count3+", and " +count1+ " students will still need a group");
         }
     }
+}
