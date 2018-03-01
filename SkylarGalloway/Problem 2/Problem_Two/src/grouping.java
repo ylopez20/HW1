@@ -32,24 +32,46 @@ public class grouping {
 
         int fullGroups= 0;
         int leftOver =0;
+        int oneLeftover=0;
+        int oneGroups = 0;      // used to combine groups of (1 1 1) if need be
+        int onesTrueleftover=0;      // used to combine groups of (1 1 1) if need be
+
         if(numOne==numTwo){
             fullGroups = numOne;
         }
         else if(numOne>numTwo){
             fullGroups = numTwo;
-            leftOver = numOne-numTwo;
+            oneLeftover = numOne-numTwo;         // used to combine groups of (1 1 1) if need be
+            //oneLeftover=leftOver;
         }
         else{
             fullGroups = numOne;
             leftOver = 2*(numTwo-numOne);
         }
+        if(oneLeftover>2){           // used to combine groups of (1 1 1) if need be
+            oneGroups = oneLeftover/3;           // used to combine groups of (1 1 1) if need be
+            onesTrueleftover=oneLeftover %3;             // used to combine groups of (1 1 1) if need be
+        }
+        else{            // used to combine groups of (1 1 1) if need be
+            onesTrueleftover=oneLeftover;
+        }
 
-        int totalGroup=numThree+fullGroups;
+        int totalGroup=numThree+fullGroups+oneGroups;
+        int trueLeftovers= leftOver+onesTrueleftover;
         if(leftOver==0) {
-            System.out.println(totalGroup + " full groups can be formed, and no students will still need a group");
+            if (trueLeftovers == 0){
+                System.out.println(totalGroup + " full groups can be formed, and no students will still need a group");
+            }
+            else{
+                System.out.println(totalGroup + " full groups can be formed, and " +trueLeftovers+ " students will still need a group");
+
+            }
         }
         else{
-            System.out.println(totalGroup + " full groups can be formed, and " + leftOver + " students will still need a group");
+            System.out.println(totalGroup + " full groups can be formed, and " + trueLeftovers+ " students will still need a group");
+            //System.out.println(numOne+" =group one "+ numTwo+" group two");
+            System.out.println(oneGroups+" = group one formed that many "+ onesTrueleftover+" = there are this many leftover "+ trueLeftovers +" this is the leftover taking into account 1 1 1 "
+                   + leftOver + "= his runs through original leftover" );
 
 
         }

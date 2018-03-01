@@ -11,4 +11,7 @@ Output Non bonus
 
 for input 1 1 1 3 0
  1 full groups can be formed, and 3 students will still need a group
-This is an issue because there can be 2 full groups formed.
+This is an issue because there can be 2 full groups formed ***.
+
+2 full groups can be formed, and no students will still need a group
+	***fixed this issue
